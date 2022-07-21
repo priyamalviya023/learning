@@ -1,278 +1,133 @@
 
 *
 {
- font-family:'Brush Script MT',
-  cursive;
- box-sizing:border-box;
+  
+  box-sizing: border-box;
 }
-.main-container {
-  display: flex;
+body {
+  font-family: "Lato", sans-serif;
+ 
+}
+
+.sidenav-setting{
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 55px;
+  left: 155px;
   background-color: white;
- flex-wrap:wrap;
- 
+  overflow-x: hidden;
+  margin:10px;
+  padding-top:20px;
+  
 }
-.main-container > section {
-  background-color: #f1f1f1;
-  box-shadow:10px;
+.sidenav-1{
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #143;
+  overflow-x: hidden;
+  padding-top: 20px;
+  margin:10px;
 }
-.upper-container{
- padding:5px;
-}
-#col-1 {
-  background-color:orange;
- margin:10px 10px 10px 10px;
- width:20%;
-}
-#col-2 {
-
- margin:10px 10px 10px 0px;
-   width:55%;
-}
-#col-3{
- background-color:green;
- width:20%;
- margin:10px 10px 10px 0px;
- 
-}
-.menu {
-  list-style-type: none;
- background-color:pink;
-   margin:5px 4px;
-
-
-}
-.menu > li a {
+.sidenav-1 a {
+  padding: 6px 6px 6px 32px;
   text-decoration: none;
- background-color:yellowgreen;
- margin-left:21%;
- padding:14px 20px;
- display:flex;
+  font-size: 25px;
+  color: #818181;
+  display: block;
 }
-#offer {
-  margin-top:200px;
-  text-align: center;
- 
-}
-.button-large {
-  border-radius: 25px;
-  padding: 5% 10%;
-  background-color: yellow;
-}
-
-.lower-container {
-  margin-top:10px;
- display:flex;
-  background-color: white;
-}
-
-
-
-
-.button-large:hover {
-  background-color:yellow;
-  color: white;
-}
-
-.button {
-  color:black;
-  border-radius:8px;
-  border:none;
-  font-size:14px;
+.sidenav-setting a {
+  padding: 8px 8px 8px 22px;
+  text-decoration: none;
+  font-size: 13px;
+  color: darkblue;
+  display: block;
   font-weight:700;
-  padding:5px 17px;
-  border-color:black;
- background-color:yellow;
-;
- 
-}
-.button:hover {
-background-color:#FFFACD;
-
 }
 
+#setting{
+  margin-left:152px;
+ display:content;
 
-.s{color:black;
-  padding: 22px;
-  font-size :2px;
-  align-content: right;
-  display: inline;
-}
-.grid-container {
-  display: grid;
-  gap: 1px;
-  background-color: ghostwhite;
-  padding:1px;
-}
-
-.grid-container > div {
-  background-color: white;
-  text-align: center;
-  font-size: 15px;
-  background-color:orange;
-
- 
-}
-
-
-.item1
-{ 
-  padding:15px 0px;
- background-color:whitesmoke;
 
 }
-.item2
-{ 
-  margin-top:11px;
-  padding:11px 3px;
- background-color:whitesmoke;
+.sidenav a:hover {
+  color: #f1f1f1;
 }
 
-.tiktok
-{   
-  font-size: 15px;
- background-color:hotpink;
- display:inline-block;
-
-}
-.a{
-  margin-right:2px;
-  margin-bottom:0px;
-margin-left:10px;
-
-}
-.c{
-  font-size:10px;
- float:left;
-position:relative;
-bottom:16px;
- left:14%;
-color:grey;
-display: inline;
-  
-}
-.abc{
-  height:30px;
-  width:35px;
-  border-radius:100%;
-  position:relative;
-  float:left;
-  left:20%;
-
+.main {
+ margin-top:10px;
+  margin-left: 403px;
+  padding:40px;
+  /* Same as the width of the sidenav */
 }
 
-.down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
 }
-.arrow {
-  border: solid black;
-  border-width: 0 3px 3px 0;
+
+label {
+  padding: 12px 12px 12px 0;
   display: inline-block;
-  padding: 2px;
 }
 
-.icon {
- width:47px;
- float:left;
- margin-right:5px;
- background-color:blue;
-  padding:14px;
- position:absolute;
-
-}
-  
-  .large {
-  font-size: 30px;
-  font-weight: bold;
-  color: black;
-  margin: 5px;
-   background-color:red;
-  }
-  #offer {
-  margin-top:60px;
-  text-align: center;
-  color: rgb(103, 172, 172);
-  }
-.admin
-{
-font-size:13px;
-margin-right:9px;;
- background-color:red;
- position:relative;
- display:inline;
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
 }
 
-
-#social-overview {
-  padding: 3px;
- 
+input[type=submit]:hover {
+  background-color: #45a049;
 }
-.ago
-{
-   font-size:10px;
- float:left;
-position:relative;
-bottom:10px;
- left:2%;
-color:grey;
-display: inline;
+
+.container {
+  border-radius: 5px;
+  background-color:white;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
   
 }
 
-.collab
-{ 
- font-size:13px;
- color:grey;
- margin-right:28px;
- margin-left:3px;
+.col-75 {
+  float: left;
+  width: 35%;
+  
 }
-.l
-{
- background-color:black;
- 
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-.weekly
-{
- background-color:blue;
- font-size:21px;
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
-.what
+.row
 {
- background-color:red;
- width:50%;
- 
- padding:2px;
-}
-.dollar
-{
- color:white;
- padding: 2px;
-}
-.left
-{
- margin-right:11px;
- background-color:green;
- width:50%;
- padding:1px;
-}
-.cross
-{
- display:inline-block;
- background-color:orangered;
- position:relative;
- left:120px;
- 
-}
-.activity
-{
- 
- position:relative;
- margin-right:100px;
- padding:10px 5px;
-}
-.col-4
-{
- padding:9px 5px;
- display:inline-block;
- 
+  border-top:1px solid lightgray;
+  padding:15px;
 }
